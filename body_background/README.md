@@ -12,7 +12,8 @@ Methodology:
     background images, excluding adult sites.
   * Compare the largest contentful paint in Chrome stable with a modified
     version of Chrome which does not invalidate background images.
-  * Show filmstrips of both versions.
+  * Show filmstrips of both versions. The largest contentful paint element
+    is highlighted in yellow when it is not a body background image.
 
 Note that very few sites with body background images were found. I only found three sites
 in the sample with background images that affected the timing of largest contentful paint.
