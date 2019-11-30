@@ -23,8 +23,8 @@ needed.
 ## https://m.coolmathgames.com/
 
 Background image for coolmathgames:
-![coolmathgames background image](body_background/coolmathgames/bodybg.png)
+![](coolmathgames/bodybg.png)
 
-Frame 1 | Frame 2 | Frame 3 | Frame 4
-------- | ------- | ------- | -------
-![](body_background/coolmathgames/filmstrip_1.jpg) | ![](body_background/coolmathgames/filmstrip_2.jpg) | ![](body_background/coolmathgames/filmstrip_3.jpg) | ![](body_background/coolmathgames/filmstrip_4.jpg) 
+Loading start | Background image (LCP if not invalidated) |   | LCP if invalidated
+------------- | ----------------------------------------- | - | -------
+![](coolmathgames/filmstrip_1.jpg) | ![](coolmathgames/filmstrip_2.jpg) | ![](coolmathgames/filmstrip_3.jpg) | ![](coolmathgames/filmstrip_4.jpg) 
