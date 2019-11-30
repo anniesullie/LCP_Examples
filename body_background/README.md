@@ -12,19 +12,21 @@ Methodology:
     background images, excluding adult sites.
   * Compare the largest contentful paint in Chrome stable with a modified
     version of Chrome which does not invalidate background images.
-  * Compare filmstrips of both versions.
+  * Show filmstrips of both versions.
 
-Note that very few sites affected by invalidating body background images were
-found. I only found three sites in the sample that had background images that
-the timing of largest contentful paint was affected by invalidating. However
-I think these three examples show clearly the value of invalidating body background
+Note that very few sites with body background images were found. I only found three sites
+in the sample with background images that affected the timing of largest contentful paint.
+However I think these three examples show clearly the value of invalidating body background
 images. I did find additional examples in the tail which could be provided if needed.
 
 ## https://www.americascardroom.eu
 
 This background image is large, and loads after the main content is displayed.
 Using it as a candidate for largest contenful paint leads to a timing that is
-too late.<br>
+too late. In the filmstrip below, you can see that when invalidating the background
+image, largest contentful paint occurs when the main content of the page is displayed.
+But if the background image is not invalidated, largest contentful paint occurs when
+the subtle stars of the flag background are displayed.<br>
 <img src="americascardroom/acreu_bg_flag.png" width=200>
 
 Loading start | Background color | LCP if invalidated | LCP if not invalidated
@@ -51,7 +53,7 @@ Loading start |   | LCP if not invalidated | LCP if invalidated
 
 Loading start |   | LCP if invalidated | LCP if not invalidated
 ------------- | - | ---------------------- | ------------------
-![](dailyvoice/filmstrip_1.jpg) | ![](dailyvoice/filmstrip_2.jpg) | ![](dailyvoice/filmstrip_4.jpg) | ![](dailyvoice/filmstrip_3b.jpg) 
+![](dailyvoice/filmstrip_1.jpg) | ![](dailyvoice/filmstrip_2.jpg) | ![](dailyvoice/filmstrip_3b.jpg) | ![](dailyvoice/filmstrip_4b.jpg) 
 
 ## https://m.coolmathgames.com/
 
