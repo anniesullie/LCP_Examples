@@ -47,11 +47,18 @@ Loading start |   | LCP if not invalidated | LCP if invalidated
 ------------- | - | ---------------------- | ------------------
 ![](dailyvoice/filmstrip_1.jpg) | ![](dailyvoice/filmstrip_2.jpg) | ![](dailyvoice/filmstrip_3.jpg) | ![](dailyvoice/filmstrip_4.jpg) 
 
+### Filmstrip when background loads slowly:
+
+Loading start |   | LCP if invalidated | LCP if not invalidated
+------------- | - | ---------------------- | ------------------
+![](dailyvoice/filmstrip_1.jpg) | ![](dailyvoice/filmstrip_2.jpg) | ![](dailyvoice/filmstrip_4.jpg) | ![](dailyvoice/filmstrip_3b.jpg) 
+
 ## https://m.coolmathgames.com/
 
 This background image loads before the main content of the site.
 Using it as a candidate for largest contentful paint leads to a timing that
-is too early.<br>
+is too early. (Note: the background is cropped to make this document easier
+to read; it's actually much longer.)<br>
 <img src="coolmathgames/bodybg.png" width=200>
 
 Loading start | Background image (LCP if not invalidated) |   | LCP if invalidated
