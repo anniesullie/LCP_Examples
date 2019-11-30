@@ -22,8 +22,8 @@ needed.
 ## https://dailyvoice.com/
 ## https://m.coolmathgames.com/
 
-Background image for coolmathgames:
-![](coolmathgames/bodybg.png)
+Background image for coolmathgames:<br>
+<img src="coolmathgames/bodybg.png" width=200>
 
 Loading start | Background image (LCP if not invalidated) |   | LCP if invalidated
 ------------- | ----------------------------------------- | - | -------
