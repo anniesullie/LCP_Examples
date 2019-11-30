@@ -15,14 +15,43 @@ Methodology:
   * Compare filmstrips of both versions.
 
 Note that very few sites affected by invalidating body background images were
-found. We did find additional examples in the tail which could be provided if
-needed.
+found. I only found three sites in the sample that had background images that
+the timing of largest contentful paint was affected by invalidating. However
+I think these three examples show clearly the value of invalidating body background
+images. I did find additional examples in the tail which could be provided if needed.
 
 ## https://www.americascardroom.eu
+
+This background image is large, and loads after the main content is displayed.
+Using it as a candidate for largest contenful paint leads to a timing that is
+too late.<br>
+<img src="americascardroom/acreu_bg_flag.png" width=200>
+
+Loading start | Background color | LCP if invalidated | LCP if not invalidated
+------------- | ---------------- | ------------------ | ----------------------
+![](americascardroom/filmstrip_1.jpg) | ![](americascardroom/filmstrip_2.jpg) | ![](americascardroom/filmstrip_3.jpg) | ![](americascardroom/filmstrip_4.jpg) 
+
 ## https://dailyvoice.com/
+
+This background image is large, and depending on network speed it  can load
+before or after the main content is displayed. Using it as a candidate for
+largest contentful paint creates a race condition depending on when it loads,
+and it ignores the fact that the main content is visible whether or not the
+main content has loaded.
+
+<img src="dailyvoice/dv-corp-mobile-v1.jpeg" width=200>
+
+### Filmstrip when background loads quickly:
+
+Loading start |   | LCP if not invalidated | LCP if invalidated
+------------- | - | ---------------------- | ------------------
+![](dailyvoice/filmstrip_1.jpg) | ![](dailyvoice/filmstrip_2.jpg) | ![](dailyvoice/filmstrip_3.jpg) | ![](dailyvoice/filmstrip_4.jpg) 
+
 ## https://m.coolmathgames.com/
 
-Background image for coolmathgames:<br>
+This background image loads before the main content of the site.
+Using it as a candidate for largest contentful paint leads to a timing that
+is too early.<br>
 <img src="coolmathgames/bodybg.png" width=200>
 
 Loading start | Background image (LCP if not invalidated) |   | LCP if invalidated
