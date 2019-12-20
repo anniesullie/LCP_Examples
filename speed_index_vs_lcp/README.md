@@ -10,10 +10,10 @@ I picked a few of these outliers in the mobile chart, and looked into them using
 ## Outliers where Largest Contenful Paint is much later than Speed Index
 
 HttpArchive on mobile uses a slow network connection, and the mobile outliers I saw where Largest Contentful Paint
-was much later than speed index all had a slow-loading hero image as the Largest Contentful Paint. For images, largest
+was much later than Speed Index all had a slow-loading hero image as the Largest Contentful Paint. For images, largest
 contentful paint occurs when the image is fully loaded and painted, which can be significantly later than speed
 index on slow connections for pages with very large images. I believe this behavior lines up well with the metric's intent of
-displaying when main content is displayed, but in some cases the user may have difficulty distinguishing when the image
+measuring when main content is displayed, but in some cases the user may have difficulty distinguishing when the image
 is fully loaded vs mostly loaded, such as the news.google.com case below.
 
 ### https://files.google.com
@@ -45,8 +45,8 @@ visual completeness metric in these cases.
 
 ### https://ca.sports.yahoo.com
 
-On this site, the hero image is replaced with an ad, so the largest contentful paint is its accompanying headline.
-Most of the content is available at the time of the largest contentful paint, but Speed Index tracks the video ad
+On this site, the hero image is replaced with an ad, so the Largest Contentful Paint is its accompanying headline.
+Most of the content is available at the time of the Largest Contentful Paint, but Speed Index tracks the video ad
 starting to load.
 
 **Speed Index occurs at 6241ms in this example, which is not visible in the filmstrip**
@@ -57,7 +57,7 @@ starting to load.
 
 ### http://wap.baidu.com/
 
-The largest contentful paint on this page is a text paragraph. The full text content of the page paints quickly, but
+The Largest Contentful Paint on this page is a text paragraph. The full text content of the page paints quickly, but
 smaller images load in slowly over the next few seconds, causing Speed Index to be later.
 
 **Speed Index occurs at 2714ms in this example, which is not visible in the filmstrip**
