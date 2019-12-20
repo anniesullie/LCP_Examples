@@ -4,7 +4,7 @@ If you look at the [scatter plots](https://datastudio.google.com/c/u/0/reporting
 you'll see some dots that are outliers, where Largest Contentful Paint doesn't really match Speed Index.
 
 I picked a few of these outliers in the mobile chart, and looked into them using the following method:
-* Loaded page in Chrome devtools performance panel to find the timing and element that was the Largest Contentful Paint
+* Loaded page in Chrome devtools performance panel to find the Largest Contentful Paint and its associated element.
 * Saved the timeline and ran it through [speedline](https://github.com/paulirish/speedline) to get the Speed Index.
 
 ## Outliers where Largest Contenful Paint is much later than Speed Index
