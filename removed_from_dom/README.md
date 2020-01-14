@@ -100,4 +100,4 @@ Here is an example from ih5.cn:
 
 Loading | Splash screen | Main content
 --------|---------------|-------------
-![](ihf/filmstrip_1.png) | ![](ihf/filmstrip_2.png) | ![](ihf/filmstrip_3.png)
+![](ih5/filmstrip_1.png) | ![](ih5/filmstrip_2.png) | ![](ih5/filmstrip_3.png)
