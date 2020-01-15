@@ -38,16 +38,15 @@ Overall I found 4 types of behaviors, shown in detail with filmstrips below:
   * 3 sites (4%): a splash screen is the LCP if removed images are not ignored;
     the main content is LCP if they are.
 
-## Proposed next steps
+## Next step
 
 I want to be sure the breakdowns in my analysis are correct:
 
   * ~2% of sites affected by this change
   * ~80% of affected sites (carousels) improved by this change.
 
-So I propose implementing both versions of the metric in Chrome side by side,
-and getting production data about the how many sites are affected and in which
-ways.
+My next step will be to implement both versions of the metric in Chrome side by side,
+and get production data about how many sites are affected, and how they are affected.
 
 ## Detailed examples
 
